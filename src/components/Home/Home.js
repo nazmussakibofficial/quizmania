@@ -20,7 +20,7 @@ const Home = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption className='h-100'>
-                            <h3 className='text-primary bg-white fw-bold'>To be the best, you have to know where you stand</h3>
+                            <h3 className='text-primary bg-white fw-semibold'>To be the best, you have to know where you stand</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -31,7 +31,7 @@ const Home = () => {
                         />
 
                         <Carousel.Caption className='h-100'>
-                            <h3 className='text-primary bg-white fw-bold'>That's why we have prepared some quizzes so you can evaluate yourself</h3>
+                            <h3 className='text-primary bg-white fw-semibold'>That's why we have prepared some quizzes so you can evaluate yourself</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
