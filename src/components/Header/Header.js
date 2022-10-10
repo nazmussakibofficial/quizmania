@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='d-flex justify-content-between container mt-5 me-5 p-4'>
+        <div className='d-flex justify-content-between container my-5'>
             <div>
                 <h2 className='text-primary fw-bolder'>Quizmania</h2>
             </div>
