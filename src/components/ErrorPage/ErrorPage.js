@@ -294,7 +294,7 @@ const ErrorPage = () => {
                 </div>
             </div>
             <div className='d-flex justify-content-center'>
-                <button className='mt-5 py-2 px-4 bg-primary border-0 rounded'><Link className='text-white text-decoration-none' to='/'>Back To Home</Link></button>
+                <button className='mt-5 py-2 px-4 bg-primary border-0 rounded'><Link className='text-white text-decoration-none fw-semibold' to='/'>Back To Home</Link></button>
             </div>
         </div>
     );
