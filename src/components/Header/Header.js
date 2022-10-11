@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <div className='d-flex justify-content-between container my-5 flex-column flex-md-row'>
             <div>
-                <h2 className='text-primary fw-bolder mb-4'>Quizmania</h2>
+                <h2 className='text-primary fw-bolder mb-5 text-center'>Quizmania</h2>
             </div>
             <div>
                 <NavLink className={`fw-bold text-decoration-none py-2 px-4 ${(isActive) => isActive ? 'active' : undefined}`} to='/' end>Home</NavLink>
