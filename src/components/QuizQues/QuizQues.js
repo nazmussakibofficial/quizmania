@@ -4,7 +4,8 @@ import { faEye } from '@fortawesome/free-solid-svg-icons'
 import Option from '../Option/Option';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-const QuizQues = ({ ques, idx }) => {
+
+const QuizQues = ({ ques, idx, setCorrect, setWrong, correct, wrong }) => {
     const handleCorrectAns = () => {
         toast.info(`Correct Answer is: ${ques.correctAnswer}`, {
             position: "top-center",
@@ -17,6 +18,7 @@ const QuizQues = ({ ques, idx }) => {
             theme: "light",
         });
     }
+
     const checkAnswer = (option) => {
         if (option.toLowerCase() === ques.correctAnswer.toLowerCase()) {
             toast.success('Correct Answer!', {
@@ -29,6 +31,7 @@ const QuizQues = ({ ques, idx }) => {
                 progress: undefined,
                 theme: "light",
             });
+            setCorrect(correct + 1);
         }
         else {
             toast.error('Wrong Answer!', {
@@ -41,6 +44,7 @@ const QuizQues = ({ ques, idx }) => {
                 progress: undefined,
                 theme: "light",
             });
+            setWrong(wrong + 1);
         }
 
     }
@@ -50,7 +54,7 @@ const QuizQues = ({ ques, idx }) => {
             <ToastContainer></ToastContainer>
             <div className='d-flex justify-content-between'>
                 <h4 className='text-primary p-3 fw-semibold'>Quiz {idx} : {ques.question}</h4>
-                <button onClick={handleCorrectAns} className='bg-white border-0'><FontAwesomeIcon className='text-primary ms-3 p-3' icon={faEye}></FontAwesomeIcon></button>
+                <button onClick={handleCorrectAns} title="Show Correct Answer" className='bg-white border-0'><FontAwesomeIcon className='text-primary ms-3 p-3' icon={faEye}></FontAwesomeIcon></button>
             </div>
             {
                 ques.options.map((option, id) => <Option key={id} option={option} checkAnswer={checkAnswer}></Option>)
