@@ -18,4 +18,6 @@ This project features:
 
 ### `easy to understand codes which can be adjusted or fixed easily`
 
+### `There is a counter for both correct and wrong answers`
+
 

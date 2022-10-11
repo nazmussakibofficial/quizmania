@@ -10,8 +10,8 @@ const Home = () => {
     const topics = useLoaderData();
     const topicsData = topics.data;
     return (
-        <div>
-            <div className='container mt-5 ms-5'>
+        <div className='d-flex flex-column flex-nowrap flex-md-wrap justify-content-center align-items-center'>
+            <div className='container mt-5'>
                 <Carousel>
                     <Carousel.Item>
                         <img
@@ -36,7 +36,7 @@ const Home = () => {
                     </Carousel.Item>
                 </Carousel>
             </div>
-            <Row xs={1} md={4} className="g-4 container mt-3 ms-5">
+            <Row xs={1} md={4} className="g-4 container mt-3">
                 {
                     topicsData.map(topic => <Topic key={topic.id} topic={topic}></Topic>)
                 }

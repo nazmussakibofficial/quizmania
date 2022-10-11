@@ -3,7 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 const Blog = () => {
     return (
-        <div className='container w-50'>
+        <div className='container w-100'>
             <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>What is the purpose of react router?</Accordion.Header>
